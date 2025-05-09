@@ -62,7 +62,7 @@ body {
 
 nav {
     background-color: var(--primary-color);
-    padding: 15px 0;
+    height: 80px;            /* ← pick whatever feels right */
     position: sticky;
     top: 0;
     z-index: 100;
@@ -73,6 +73,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .logo {
@@ -82,7 +83,9 @@ nav {
     font-weight: normal;
     text-decoration: none;
     letter-spacing: 0.03em; 
+    padding: 10px 0px 0px 10px;
 }
+
 
 .logo:hover {
     color: var(--accent-color);
@@ -126,17 +129,12 @@ header h1 {
 }
 
 header p {
+    font-family: 'TANAngleton', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     font-size: 1.3rem;
     opacity: 0.9;
     max-width: 800px;
-    margin: 0 auto 20px;
+    margin: 0 auto 10px;
     
-}
-
-.tagline {
-    font-style: italic;
-    margin-bottom: 30px;
-    font-size: 1.1rem;
 }
 
 .main-content {
@@ -474,9 +472,10 @@ h2:after {
 }
 
 .contact-heading {
+    font-family: 'TANAngleton', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: var(--primary-color);
     margin-bottom: 25px;
-    font-size: 1.4rem;
+    font-size: 1em;
 }
 
 .contact-item {
@@ -692,6 +691,8 @@ footer {
 }
 
 .faq-question {
+    font-family: 'TANAngleton', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: .8em;
     padding: 20px 30px;
     background-color: #fff;
     color: var(--primary-color);
