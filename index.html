@@ -3,266 +3,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embodied Social Work | Liz Johnson</title>
-    <style>
-        /* Color palette */
-        :root {
-            --primary-color: #5a7d7c; /* Sage green */
-            --secondary-color: #d1c8b7; /* Warm beige */
-            --accent-color: #e78f5e; /* Soft terracotta */
-            --text-color: #333333;
-            --light-color: #f5f5f5;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: var(--light-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.6rem;
-            margin-bottom: 10px;
-        }
-        
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        .main-content {
-            padding: 60px 0;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-            text-align: center;
-        }
-        
-        @media (min-width: 768px) {
-            .main-content {
-                grid-template-columns: 1fr 1fr;
-                text-align: left;
-            }
-        }
-        
-        .hero-image {
-            background-color: var(--secondary-color);
-            border-radius: 10px;
-            height: 100%;
-            min-height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-        
-        .hero-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .intro {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: var(--primary-color);
-        }
-        
-        .intro p {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-        
-        .services {
-            padding: 60px 0;
-            background-color: var(--secondary-color);
-            text-align: center;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        @media (min-width: 768px) {
-            .services-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        
-        .service-card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .service-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-        
-        .contact {
-            padding: 60px 0;
-            text-align: center;
-        }
-        
-        .contact-info {
-            margin-top: 30px;
-        }
-        
-        .contact-item {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-        
-        .contact-item a {
-            color: var(--accent-color);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .contact-item a:hover {
-            color: var(--primary-color);
-            text-decoration: underline;
-        }
-        
-        .social-links {
-            margin-top: 30px;
-        }
-        
-        .social-links a {
-            display: inline-block;
-            margin: 0 10px;
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            transition: color 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            color: var(--accent-color);
-        }
-        
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 12px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
-        }
-        
-        .cta-button:hover {
-            background-color: var(--primary-color);
-        }
-    </style>
+    <title>Embodied Social Work | Liz Johnson, MSW</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">Embodied Social Work</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#approach">Approach</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <header>
         <div class="container">
             <h1>Embodied Social Work</h1>
-            <p>Holistic Wellness Through Mind-Body Connection</p>
+            <p>Integrating Mind & Body for Holistic Mental Health</p>
+            <p class="tagline">Where neuroscience meets compassionate, body-centered approaches</p>
+            <a href="#contact" class="cta-button">Schedule a Consultation</a>
         </div>
     </header>
 
-    <section class="main-content container">
+    <section id="about" class="main-content container">
         <div class="intro">
             <h2>Liz Johnson</h2>
-            <p>Social Worker | Yoga Instructor | Somatic Wellness Practitioner</p>
-            <p>Welcome to Embodied Social Work, where traditional social work practice meets holistic wellness approaches. I believe in the profound connection between mind and body for overall wellbeing.</p>
-            <p>Through personalized sessions that combine evidence-based social work practices with somatic awareness techniques, I help clients develop deeper self-understanding and lasting resilience.</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
+            <div class="credentials">
+                <span class="credential-tag">Social Worker</span>
+                <span class="credential-tag">RYT-200 Yoga Instructor</span>
+                <span class="credential-tag">Somatic Practitioner</span>
+            </div>
+            <p>Welcome to Embodied Social Work, where traditional social work practice meets cutting-edge somatic approaches. I specialize in helping individuals reconnect with their innate capacity for healing through evidence-informed interventions that address trauma, anxiety, and stress where they live - in the body.</p>
+            <p>My practice is grounded in an understanding of neurobiology and the understanding that our bodies hold our experiences. By working with both mind and body simultaneously, we can create deeper, more sustainable healing than through talk therapy alone.</p>
+            <p>With an education in nervous system regulation, trauma recovery, and somatic awareness, I offer a unique integration of approaches tailored to your individual needs, cultural background, and personal goals.</p>
+            <a href="#services" class="cta-button">Explore My Services</a>
         </div>
         <div class="hero-image">
             <img src="media/headshot.jpg" alt="Liz Johnson - Embodied Social Work">
         </div>
     </section>
 
-    <section class="services">
+    <section class="quote-banner">
         <div class="container">
-            <h2>Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Social Work Perspective</h3>
-                    <p>Approaching life challenges, trauma recovery, and mental health through a holistic lens that honors the whole person, acknowledging individual needs and systemic factors.</p>
+            <div class="quote-text">
+                "The body has been designed to renew itself through continuous self-correction. These same principles also apply to the healing of psyche, spirit, and soul."
+            </div>
+            <div class="quote-author">— Peter A. Levine, PhD</div>
+        </div>
+    </section>
+
+    <section id="approach" class="approach">
+        <div class="container approach-content">
+            <h2>My Approach</h2>
+            <p>I integrate evidence-informed somatic modalities with traditional approaches, creating a holistic framework that honors the interconnection between mind, body, and spirit.</p>
+            <p>I believe that healing happens not just through insight, but through embodied experience. By reconnecting with the wisdom that lives within your body, you can develop a deeper understanding of yourself and create lasting change.</p>
+            <div class="approach-principles">
+                <div class="principle">
+                    <h3>Nervous System Regulation</h3>
+                    <p>Utilizing this knowledge to help you understand your body's responses to stress and develop skills for returning to a state of safety and connection.</p>
                 </div>
-                <div class="service-card">
-                    <h3>Yoga for Healing</h3>
-                    <p>RYT-200 Certified instructor offering trauma-informed yoga practices specifically designed to enhance emotional regulation, reduce stress, and cultivate deeper embodied awareness.</p>
+                <div class="principle">
+                    <h3>Trauma-Informed Care</h3>
+                    <p>Recognizing how trauma lives in the body and working gently with your nervous system to process difficult experiences without retraumatization.</p>
                 </div>
-                <div class="service-card">
-                    <h3>Somatic Wellness</h3>
-                    <p>Utilizing integrative techniques that strengthen the mind-body connection, release accumulated tension, and foster greater resilience and self-awareness for sustainable healing.</p>
+                <div class="principle">
+                    <h3>Cultural Responsiveness</h3>
+                    <p>Honoring diverse cultural backgrounds and adapting somatic approaches to be inclusive, accessible, and respectful of your unique identity and experiences.</p>
+                </div>
+                <div class="principle">
+                    <h3>Body-Centered Awareness</h3>
+                    <p>Developing your capacity to notice and understand bodily sensations as valuable information about your emotional state and needs.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact container">
-        <h2>Connect With Me</h2>
-        <div class="contact-info">
-            <div class="contact-item">
-                <strong>Email:</strong> <a href="mailto:Liz@EmbodiedSocialWork.com">Liz@EmbodiedSocialWork.com</a>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Individual Consultations</h3>
+                    <p>Personalized individual sessions which integrate somatic approaches to address trauma, anxiety, stress, and increase emotional regulation.</p>
+                    <div class="service-details">
+                        <ul>
+                            <li>Nervous system regulation</li>
+                            <li>Trauma processing</li>
+                            <li>Somatic awareness building</li>
+                            <li>Mindfulness & embodiment practices</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <h3>Yoga Teacher</h3>
+                    <p>I am an RYT-200 certified yoga instructor able to recommend practices designed to enhance reduce stress and cultivate deeper embodied awareness through safe, accessible movement.</p>
+                    <div class="service-details">
+                        <ul>
+                            <li>Private and small group sessions</li>
+                            <li>Focus on safety and choice</li>
+                            <li>Adaptable to all bodies and abilities</li>
+                            <li>Integration with therapeutic goals</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <h3>Psychoeducation Groups</h3>
+                    <p>I regularly facilitate psychoeducation and skills groups based around somatic wellness in community, professional, and educational settings.</p>
+                    <div class="service-details">
+                        <ul>
+                            <li>Somatic psychoeducation and skills for the community</li>
+                            <li>Wellness training for your organization</li>
+                            <li>Somatic education and tools for clinicians</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="contact-item">
-                <strong>Website:</strong> <a href="https://EmbodiedSocialWork.com">EmbodiedSocialWork.com</a>
+        </div>
+    </section>
+
+    <!-- <section class="testimonials">
+        <div class="container">
+            <h2>Client Experiences</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        Working with Liz has transformed my relationship with my body. For years, I tried traditional talk therapy without making much progress. Learning to listen to my body's signals through her somatic approach has helped me understand my anxiety in ways I never could before. I now have practical tools to regulate my nervous system when I feel overwhelmed.
+                    </div>
+                    <div class="testimonial-author">Sarah K.</div>
+                    <div class="testimonial-role">Client, Trauma Recovery</div>
+                </div>
             </div>
-            <div class="contact-item">
-                <strong>Instagram:</strong> <a href="https://instagram.com/EmbodiedSocialWork">@EmbodiedSocialWork</a>
+        </div>
+    </section> -->
+
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">What exactly is somatic work?</div>
+                    <div class="faq-answer">
+                        <p>Somatic work is a body-centered approach to healing that recognizes the profound connection between mind and body. Unlike traditional talk therapy, which focuses primarily on thoughts and emotions, somatic interventions directly engage with physical sensations, movement patterns, and nervous system states. By working with the body's innate wisdom, somatic approaches help address trauma, stress, and emotional challenges that are stored in the body, not just the mind.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do I need previous body awareness experience?</div>
+                    <div class="faq-answer">
+                        <p>Not at all! Many clients come to somatic work with limited body awareness, and developing this connection is actually part of the process. I meet you wherever you are in your journey and provide gentle guidance to help you build your capacity for embodied awareness at a pace that feels comfortable and safe for you.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How is this different from traditional therapy?</div>
+                    <div class="faq-answer">
+                        <p>Traditional talk therapy primarily engages the cognitive, thinking part of your brain. While this can be valuable and is typically used in conjuction with somatic interventions, talk therapy alone sometimes misses the physical aspects of our experiences - especially with trauma, which affects our nervous system and bodily responses. Somatic approaches integrate body awareness, movement, breath, and nervous system regulation with cognitive understanding, creating a more comprehensive pathway to healing. This bottom up approach can often lead to deeper, more sustainable change than talk therapy alone.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Will I have to talk about my trauma in detail?</div>
+                    <div class="faq-answer">
+                        <p>No, and this is one of the key benefits of somatic work. Rather than requiring detailed retelling of traumatic experiences, which can sometimes be retraumatizing, somatic approaches focus on how trauma manifests in your body today. We work with present-moment sensations, movement patterns, and nervous system responses, allowing healing to occur without necessarily revisiting the specifics of difficult experiences.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">I have mobility limitations. Can I still benefit from somatic work?</div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Somatic work is adaptable to all bodies and abilities. The foundation of this approach is connecting with sensation and building awareness, which can be done in any position and with any level of mobility. I tailor all interventions to meet your specific needs and physical abilities, whether that means seated practices, micro-movements, or even visualization techniques. Many clients with chronic pain, limited mobility, or disabilities find somatic approaches particularly valuable because they emphasize working with the body you have, rather than imposing external standards of movement or ability.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How much time do I need to commit to see results? I'm already busy.</div>
+                    <div class="faq-answer">
+                        <p>I understand that time is precious, and somatic work is designed to integrate into your life, not add another burden. Many of the most effective somatic techniques take only minutes to practice and can be incorporated into daily activities you're already doing. While regular sessions support deeper change, we'll focus on practical, accessible tools that fit your lifestyle. Many clients report noticing subtle shifts after just a few sessions, though more sustainable changes typically develop over time. Remember that even brief moments of embodied awareness throughout your day can create meaningful change in your nervous system regulation and overall well-being.</p>
+                    </div>
+                </div>
             </div>
-            <div class="contact-item">
-                <strong>Calendly:</strong> <a href="https://calendly.com/liz-embodiedsocialwork/30min">Click here to book</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Connect With Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's Start a Conversation</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div class="contact-text">
+                            <strong>Email:</strong><br>
+                            <a href="mailto:Liz@EmbodiedSocialWork.com">Liz@EmbodiedSocialWork.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💻</span>
+                        <div class="contact-text">
+                            <strong>Schedule a Consultation:</strong><br>
+                            <a href="https://calendly.com/liz-embodiedsocialwork/30min">Book Online</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🖼️</span>
+                        <div class="contact-text">
+                            <strong>Instagram:</strong><br>
+                            <a href="https://instagram.com/EmbodiedSocialWork">@EmbodiedSocialWork</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div class="contact-text">
+                            <strong>Location:</strong><br>
+                            Pittsburgh, PA<br>
+                            (Virtual sessions available nationwide)
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formsubmit.co/d26c8756bac862d53cde2dfbf784aef8" method="POST">
+                        <!-- Prevents page redirection -->
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <!-- Customize the subject line of emails you'll receive -->
+                        <input type="hidden" name="_subject" value="New Message from Embodied Social Work Website">
+                        
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Embodied Social Work. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p class="copyright">&copy; 2025 Embodied Social Work. All rights reserved.</p>
         </div>
     </footer>
+
+    <div class="thank-you-popup" id="thankYouPopup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">×</button>
+            <h3>Thank You!</h3>
+            <p>Your message has been sent successfully. I'll get back to you soon!</p>
+            <button class="cta-button" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            
+            // Submit the form using fetch
+            fetch("https://formsubmit.co/d26c8756bac862d53cde2dfbf784aef8", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                // Show thank you popup
+                document.getElementById("thankYouPopup").classList.add("show-popup");
+                
+                // Reset the form
+                document.getElementById("contactForm").reset();
+            })
+            .catch(error => console.log('Error:', error));
+        });
+        
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById("thankYouPopup").classList.remove("show-popup");
+        }
+        
+        // Close popup when clicking outside of it
+        window.addEventListener("click", function(event) {
+            const popup = document.getElementById("thankYouPopup");
+            if (event.target === popup) {
+                closePopup();
+            }
+        });
+
+        // Simple FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
