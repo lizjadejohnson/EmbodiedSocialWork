@@ -14,6 +14,40 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
+/* FONTS */
+/* TAN Rosebud */
+@font-face {
+    font-family: 'TANRosebud';
+    src: url('fonts/tanrosebud-webfont.woff2') format('woff2'),
+         url('fonts/tanrosebud-webfont.woff') format('woff'),
+         url('fonts/TANRosebud.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* TAN Angleton Regular */
+@font-face {
+    font-family: 'TANAngleton';
+    src: url('fonts/tan_-_angleton_regular-webfont.woff2') format('woff2'),
+         url('fonts/tan_-_angleton_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* TAN Angleton Italic */
+@font-face {
+    font-family: 'TANAngleton';
+    src: url('fonts/tan_-_angleton_italic-webfont.woff2') format('woff2'),
+         url('fonts/tan_-_angleton_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
 body {
     background-color: var(--light-color);
     color: var(--text-color);
@@ -42,10 +76,17 @@ nav {
 }
 
 .logo {
+    font-family: 'TANRosebud', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff8ef;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.8rem; 
+    font-weight: normal;
     text-decoration: none;
+    letter-spacing: 0.03em; 
+}
+
+.logo:hover {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
 }
 
 .nav-links {
@@ -59,6 +100,7 @@ nav {
 
 .nav-links a {
     color: #fff8ef;
+    font-family: 'TANAngleton', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -76,7 +118,9 @@ header {
 }
 
 header h1 {
+    font-family: 'TANRosebud', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2.8rem;
+    letter-spacing: 0.03em; 
     margin-bottom: 15px;
     line-height: 1.2;
 }
@@ -86,6 +130,7 @@ header p {
     opacity: 0.9;
     max-width: 800px;
     margin: 0 auto 20px;
+    
 }
 
 .tagline {
@@ -133,6 +178,7 @@ header p {
 }
 
 h2 {
+    font-family: 'TANAngleton', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     font-size: 2rem;
     margin-bottom: 25px;
     color: var(--primary-color);
@@ -149,6 +195,7 @@ h2:after {
     height: 3px;
     background-color: var(--accent-color);
 }
+
 
 @media (max-width: 768px) {
     h2:after {
@@ -233,6 +280,7 @@ h2:after {
 }
 
 .principle h3 {
+    font-family: 'TANAngleton', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: var(--primary-color);
     margin-bottom: 15px;
     font-size: 1.3rem;
