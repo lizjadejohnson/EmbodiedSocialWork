@@ -334,6 +334,7 @@ h2:after {
 
 .service-card h3 {
     color: var(--primary-color);
+    font-family: 'TANAngleton', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     margin-bottom: 20px;
     font-size: 1.4rem;
     padding-bottom: 15px;
